@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>DikymonZ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a3e17a432d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="head_bar">
+  <h1 class="head_bar__title">DikymonZ Comics Apps</h1>
+</header>
+<main>
+  <section class="input_section">
+    <h2>Masukkan Buku Baru</h2>
+    <form id="inputBook">
+      <div class="input">
+        <label for="inputBookTitle">Judul</label>
+        <input id="inputBookTitle" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputBookAuthor">Penulis</label>
+        <input id="inputBookAuthor" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputBookYear">Tahun</label>
+        <input id="inputBookYear" type="number" required>
+      </div>
+      <div class="input_inline">
+        <label for="inputBookIsComplete">Selesai dibaca</label>
+        <input id="inputBookIsComplete" type="checkbox">
+      </div>
+      <button id="bookSubmit" type="submit">Simpan <i class="fa-solid fa-floppy-disk"></i></button>
+    </form>
+  </section>
+  
+  <section class="search_section">
+    <h2>Search Comics</h2>
+    <form id="searchBook">
+      <label for="searchBookTitle">Judul</label>
+      <input id="searchBookTitle" type="text">
+      <button id="searchSubmit" type="submit">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </section>
+  
+  <section class="book_shelf">
+    <h2>Belum selesai dibaca</h2>
+    <div id="incompleteBookshelfList" class="book_list"></div>
+  </section>
+  
+  <section class="book_shelf">
+    <h2>Selesai dibaca</h2>
+    <div id="completeBookshelfList" class="book_list"></div>
+  </section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
