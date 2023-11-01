@@ -137,7 +137,8 @@ main {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    
+    grid-column: span 2; 
+    text-align: center; 
 }
 
 .book_shelf {
