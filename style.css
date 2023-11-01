@@ -187,3 +187,38 @@ main {
     color: white;
 }
 
+/* Media query untuk layar dengan lebar kurang dari 768px */
+@media (max-width: 767px) {
+  .search_section {
+    padding: 10px;
+    padding-top: 20px; /* Menambahkan padding atas sebesar 20px pada layar kecil */
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+}
+
+/* Media query untuk layar dengan lebar kurang dari 480px */
+@media (max-width: 479px) {
+  input[type="text"] {
+    font-size: 12px;
+  }
+}/* Media query untuk layar dengan lebar kurang dari 768px */
+@media (max-width: 767px) {
+    .search_section {
+      padding: 10px;
+      padding-top: 20px; /* Menambahkan padding atas sebesar 20px pada layar kecil */
+    }
+  
+    input[type="text"] {
+      font-size: 14px;
+    }
+  }
+  
+  /* Media query untuk layar dengan lebar kurang dari 480px */
+  @media (max-width: 479px) {
+    input[type="text"] {
+      font-size: 12px;
+    }
+  }
