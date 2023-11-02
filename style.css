@@ -95,7 +95,6 @@ main {
     font-weight: bold;
     margin-right: 10px;
 }
-
 .search_section {
     margin: 16px 0;
     display: flex;
@@ -103,7 +102,7 @@ main {
     align-items: center;
     padding: 16px;
     border: 1px solid rgba(255, 255, 255, .25);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-radius: 15px;
 }
 
@@ -117,6 +116,7 @@ main {
     display: grid;
     grid-template-columns: auto 1fr 0.5fr;
     grid-gap: 10px;
+    align-items: stretch; /* Memastikan elemen-elemen dalam formulir memanjang sesuai dengan tinggi tombol */
 }
 
 .search_section > form > label {
@@ -125,10 +125,8 @@ main {
 }
 
 .search_section > form > input {
-    padding: 5px;
+    padding: 8px; /* Sesuaikan padding sesuai kebutuhan */
     border-radius: 5px;
-    
-    
 }
 
 .search_section > form > button {
@@ -137,9 +135,9 @@ main {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    grid-column: span 2; 
-    text-align: center; 
+    grid-column: span 2; /* Menempatkan tombol di dua kolom dalam grid */
 }
+
 
 .book_shelf {
     margin: 16px 0 0 0;
